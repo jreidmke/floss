@@ -12,7 +12,9 @@ const Logo = (props: ILogoProps) => {
     : 'font-semibold text-xl';
 
   return (
-    <span className={`text-gray-900 inline-flex items-center ${fontStyle}`}>
+    <span
+      className={`text-gray-900 inline-flex items-center bg-pink-100 bg-opacity-50 rounded-md p-3 h-20 ${fontStyle}`}
+    >
       <FaTooth />
       <path d="M0 0h24v24H0z" stroke="none" />
       <rect x="3" y="12" width="6" height="8" rx="1" />

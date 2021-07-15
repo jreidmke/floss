@@ -4,8 +4,8 @@ type DLogoProps = {
 
 const LogoLink = (props: DLogoProps) => {
   return (
-    <div className="w-36">
-      <img className="object-contain" src={props.src} alt="ADA Logo" />
+    <div className="w-36 bg-pink-100 bg-opacity-50 rounded-md p-3 h-20">
+      <img className="object-contain" src={props.src} alt="Logo" />
     </div>
   );
 };
