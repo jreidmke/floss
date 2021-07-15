@@ -14,7 +14,7 @@ export const Accordion: React.FC<AccordionProps> = ({
   const [active, setActive] = useState(false);
   const [height, setHeight] = useState('0px');
   // eslint-disable-next-line unused-imports/no-unused-vars
-  const [rotate, setRotate] = useState('transform duration-700 ease');
+  // const [rotate, setRotate] = useState('transform duration-700 ease');
 
   const contentSpace = useRef(null);
 
@@ -22,11 +22,11 @@ export const Accordion: React.FC<AccordionProps> = ({
     setActive(active === false);
     // @ts-ignore
     setHeight(active ? '0px' : `${contentSpace.current.scrollHeight}px`);
-    setRotate(
-      active
-        ? 'transform duration-700 ease'
-        : 'transform duration-700 ease rotate-180'
-    );
+    // setRotate(
+    //   active
+    //     ? 'transform duration-700 ease'
+    //     : 'transform duration-700 ease rotate-180'
+    // );
   }
 
   return (
