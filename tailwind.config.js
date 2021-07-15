@@ -46,7 +46,7 @@ module.exports = {
     },
     // eslint-disable-next-line no-unused-vars
     backgroundImage: (theme) => ({
-      'hero-pattern': "url('/assets/images/smile-floss-o4.png')",
+      'hero-pattern': "url('/assets/images/smile-floss.jpeg')",
       'footer-texture': "url('/img/footer-texture.png')",
     }),
   },
