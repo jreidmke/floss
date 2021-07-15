@@ -1,3 +1,5 @@
+import { Accordion } from '../accordion/Accordion';
+import { Flavors } from '../accordion/Flavors';
 import { Meta } from '../layout/Meta';
 import { AppConfig } from '../utils/AppConfig';
 import { Banner } from './Banner';
@@ -11,6 +13,7 @@ const Base = () => (
     <Hero />
     <VerticalFeatures />
     <Banner />
+    <Accordion color="bg-red-400" title="Flavors" content={<Flavors />} />
     <Footer />
   </div>
 );
