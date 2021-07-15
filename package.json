@@ -11,8 +11,7 @@
     "clean": "rimraf .next out",
     "lint": "next lint",
     "build-types": "tsc --noEmit --pretty",
-    "prepare": "husky install",
-    "export": "next build && next export"
+    "prepare": "husky install"
   },
   "dependencies": {
     "classnames": "^2.3.1",
