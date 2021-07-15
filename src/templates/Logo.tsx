@@ -8,7 +8,7 @@ type ILogoProps = {
 
 const Logo = (props: ILogoProps) => {
   const fontStyle = props.xl
-    ? 'font-semibold text-5xl text-primary-800'
+    ? 'font-serif text-5xl text-primary-800'
     : 'font-semibold text-xl';
 
   return (

@@ -9,8 +9,8 @@ import { Logo } from './Logo';
 
 const Hero = () => (
   // <Background color="bg-gray-100">
-  <div className="bg-hero-pattern bg-opacity-50">
-    <Section yPadding="py-6">
+  <div className="bg-hero-pattern">
+    <div>
       <NavbarTwoColumns logo={<Logo xl />}>
         <li>
           <Link href="https://www.adha.org/">
@@ -27,7 +27,7 @@ const Hero = () => (
           </Link>
         </li>
       </NavbarTwoColumns>
-    </Section>
+    </div>
 
     <Section yPadding="pt-20 pb-20">
       <HeroOneButton
