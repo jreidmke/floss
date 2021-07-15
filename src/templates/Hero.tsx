@@ -9,8 +9,8 @@ import { Logo } from './Logo';
 
 const Hero = () => (
   // <Background color="bg-gray-100">
-  <div className="bg-hero-pattern bg-opacity-50">
-    <Section yPadding="py-6">
+  <div className="bg-hero-pattern">
+    <div>
       <NavbarTwoColumns logo={<Logo xl />}>
         <li>
           <Link href="https://www.adha.org/">
@@ -27,14 +27,14 @@ const Hero = () => (
           </Link>
         </li>
       </NavbarTwoColumns>
-    </Section>
+    </div>
 
-    <Section yPadding="pt-20 pb-32">
+    <Section yPadding="pt-20 pb-20">
       <HeroOneButton
         title={
           <>
             {'A dazzling smile starts with...\n'}
-            <span className="text-primary-600">The Perfect Floss</span>
+            <span className="text-primary-700">The Perfect Floss</span>
           </>
         }
         description="Click below to learn how to perform the perfect floss!"
