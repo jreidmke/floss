@@ -7,8 +7,7 @@ import { NavbarTwoColumns } from '../navigation/NavbarTwoColumns';
 import { Logo } from './Logo';
 
 const Hero = () => (
-  // <Background color="bg-gray-100">
-  <div className="bg-hero-pattern">
+  <div className="bg-hero-pattern pb-12">
     <div>
       <NavbarTwoColumns logo={<Logo xl />}>
         <li>
@@ -27,7 +26,7 @@ const Hero = () => (
         </li>
       </NavbarTwoColumns>
     </div>
-    <div className="mb-64">
+    <div className="mt-32">
       <HeroOneButton
         title={
           <>
