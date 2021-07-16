@@ -1,3 +1,5 @@
+/* eslint-disable no-console */
+/* eslint-disable unused-imports/no-unused-vars */
 import React, { useRef, useState, ReactNode } from 'react';
 
 interface AccordionProps {
@@ -15,7 +17,6 @@ export const Accordion: React.FC<AccordionProps> = ({
 }) => {
   const [active, setActive] = useState(false);
   const [height, setHeight] = useState('0px');
-  // eslint-disable-next-line unused-imports/no-unused-vars
   const [rotate, setRotate] = useState('transform duration-700 ease');
 
   const contentSpace = useRef(null);
@@ -30,6 +31,7 @@ export const Accordion: React.FC<AccordionProps> = ({
         : 'transform duration-700 ease rotate-180'
     );
   }
+  console.log(rotate);
 
   return (
     <div className={`text-center inline-block text-white	w-1/3 ${color}`}>
