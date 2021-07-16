@@ -30,7 +30,7 @@ export const Accordion: React.FC<AccordionProps> = ({
   }
 
   return (
-    <div className={`text-center text-white	${color}`}>
+    <div className={`text-center text-blue	${color}`}>
       <button
         className="content-center inline-flex items-center py-6"
         type="submit"
