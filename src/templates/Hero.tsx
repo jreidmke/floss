@@ -3,7 +3,6 @@ import Link from 'next/link';
 import { Button } from '../button/Button';
 import { HeroOneButton } from '../hero/HeroOneButton';
 import { LogoLink } from '../hero/LogoLink';
-import { Section } from '../layout/Section';
 import { NavbarTwoColumns } from '../navigation/NavbarTwoColumns';
 import { Logo } from './Logo';
 
@@ -28,8 +27,7 @@ const Hero = () => (
         </li>
       </NavbarTwoColumns>
     </div>
-
-    <Section yPadding="pt-20 pb-20">
+    <div className="mb-64">
       <HeroOneButton
         title={
           <>
@@ -46,7 +44,7 @@ const Hero = () => (
           </Link>
         }
       />
-    </Section>
+    </div>
   </div>
 );
 

@@ -8,12 +8,12 @@ type ILogoProps = {
 
 const Logo = (props: ILogoProps) => {
   const fontStyle = props.xl
-    ? 'font-serif text-6xl text-primary-800'
+    ? 'font-mono text-6xl text-pink-300'
     : 'font-semibold text-xl';
 
   return (
     <span
-      className={`text-gray-900 inline-flex items-center bg-pink-100 bg-opacity-50 rounded-md p-3 h-20 ${fontStyle}`}
+      className={`text-gray-900 inline-flex items-center p-3 h-20 bg-blue-200 bg-opacity-50 rounded-md ${fontStyle}`}
     >
       <FaTooth />
       <path d="M0 0h24v24H0z" stroke="none" />
