@@ -4,7 +4,7 @@ interface AccordionProps {
   color: string;
   title: string;
   content: ReactNode;
-  overflow?: boolean;
+  overflow: string;
 }
 
 export const Accordion: React.FC<AccordionProps> = ({
@@ -23,7 +23,7 @@ export const Accordion: React.FC<AccordionProps> = ({
   function toggleAccordion() {
     setActive(active === false);
     // @ts-ignore
-    setHeight(active ? '0px' : `${contentSpace.current.scrollHeight * 2}px`);
+    setHeight(active ? '0px' : `${contentSpace.current.scrollHeight * 3}px`);
     setRotate(
       active
         ? 'transform duration-700 ease'
@@ -59,10 +59,8 @@ export const Accordion: React.FC<AccordionProps> = ({
       </button>
       <div
         ref={contentSpace}
-        style={{ maxHeight: `${height}` }}
-        className={`transition-max-height duration-700 ease-in-out overflow-${
-          !overflow ? 'hidden' : 'auto'
-        }`}
+        style={{ maxHeight: `${height}`, overflow: `${overflow}` }}
+        className="transition-max-height duration-700 ease-in-out"
       >
         <div className="pb-4 ">{content}</div>
       </div>
