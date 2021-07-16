@@ -3,13 +3,11 @@ import Link from 'next/link';
 import { Button } from '../button/Button';
 import { HeroOneButton } from '../hero/HeroOneButton';
 import { LogoLink } from '../hero/LogoLink';
-import { Section } from '../layout/Section';
 import { NavbarTwoColumns } from '../navigation/NavbarTwoColumns';
 import { Logo } from './Logo';
 
 const Hero = () => (
-  // <Background color="bg-gray-100">
-  <div className="bg-hero-pattern">
+  <div className="bg-hero-pattern pb-12">
     <div>
       <NavbarTwoColumns logo={<Logo xl />}>
         <li>
@@ -28,8 +26,7 @@ const Hero = () => (
         </li>
       </NavbarTwoColumns>
     </div>
-
-    <Section yPadding="pt-20 pb-20">
+    <div className="mt-32">
       <HeroOneButton
         title={
           <>
@@ -46,7 +43,7 @@ const Hero = () => (
           </Link>
         }
       />
-    </Section>
+    </div>
   </div>
 );
 

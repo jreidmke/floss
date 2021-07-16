@@ -31,7 +31,7 @@ const flavorList = [
 
 function Flavors() {
   return (
-    <ul style={{ columnCount: 4 }}>
+    <ul style={{ columnCount: 3 }}>
       {flavorList.map((f) => (
         <li key={f}>{f}</li>
       ))}
