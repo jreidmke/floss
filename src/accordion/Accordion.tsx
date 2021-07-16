@@ -18,7 +18,7 @@ export const Accordion: React.FC<AccordionProps> = ({
   // eslint-disable-next-line unused-imports/no-unused-vars
   const [rotate, setRotate] = useState('transform duration-700 ease');
 
-  const contentSpace = useRef(null);
+  const contentSpace = useRef(null)
 
   function toggleAccordion() {
     setActive(active === false);
