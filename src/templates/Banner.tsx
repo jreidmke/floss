@@ -28,8 +28,10 @@ const Banner = () => (
       showThumbs={Boolean(false)}
       showArrows={Boolean(true)}
       infiniteLoop={Boolean(true)}
+      autoPlay={Boolean(true)}
+      transitionTime={Number(500)}
     >
-      <div className="text-center flex flex-col p-4 sm:text-left sm:flex-col sm:items-center sm:justify-between sm:p-12 bg-pink-200 rounded-md">
+      <div className="text-center flex flex-col p-4 sm:text-left sm:flex-col sm:items-center sm:justify-between sm:p-12 bg-primary-100 rounded-md">
         <p className="text-center text-lg leading-9">
           &quot;Thanks floss! Floss is great. I like floss more and more each
           day because it makes my life a lot easier.&quot;
@@ -40,11 +42,10 @@ const Banner = () => (
           src="/assets/images/person1.jpg"
         />
       </div>
-      <div className="text-center flex flex-col p-4 sm:text-left sm:flex-col sm:items-center sm:justify-between sm:p-12 bg-primary-100 rounded-md">
+      <div className="text-center flex flex-col p-4 sm:text-left sm:flex-col sm:items-center sm:justify-between sm:p-12 bg-pink-200 rounded-md">
         <p className="text-center text-lg leading-9">
           &quot;I am so pleased with this product. The service was excellent.
-          The service was excellent. Floss was the best investment I ever
-          made.&quot;
+          Floss was the best investment I ever made.&quot;
         </p>
         <p className="mt-4 font-extrabold">Trudie T.</p>
         <img
@@ -54,8 +55,8 @@ const Banner = () => (
       </div>
       <div className="text-center flex flex-col p-4 sm:text-left sm:flex-col sm:items-center sm:justify-between sm:p-12 bg-primary-100 rounded-md">
         <p className="text-center text-lg leading-9">
-          &quot;I am so pleased with this product. I will let my mum know about
-          this, she could really make use of floss!&quot;
+          &quot;What a great product. I will let my mum know about this, she
+          could really make use of floss!&quot;
         </p>
         <p className="mt-4 font-extrabold">Frank F.</p>
         <img
