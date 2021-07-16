@@ -18,7 +18,7 @@ const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
     'flex-wrap',
     'items-center',
     {
-      'flex-row-reverse bg-blue-100 p-8': props.reverse,
+      'flex-row-reverse': props.reverse,
     }
   );
 
@@ -33,7 +33,7 @@ const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
 
       <div className="rounded-full bg-blue-200 shadow-lg w-full sm:w-1/2 p-6">
         <img
-          className="rounded-full ransition-opacity duration-1000 ease-out opacity-100 hover:opacity-50"
+          className="rounded-full"
           src={`${router.basePath}${props.image}`}
           alt={props.imageAlt}
         />
