@@ -4,12 +4,14 @@ interface AccordionProps {
   color: string;
   title: string;
   content: ReactNode;
+  overflow?: boolean;
 }
 
 export const Accordion: React.FC<AccordionProps> = ({
   color,
   title,
   content,
+  overflow,
 }) => {
   const [active, setActive] = useState(false);
   const [height, setHeight] = useState('0px');
@@ -21,7 +23,7 @@ export const Accordion: React.FC<AccordionProps> = ({
   function toggleAccordion() {
     setActive(active === false);
     // @ts-ignore
-    setHeight(active ? '0px' : `${contentSpace.current.scrollHeight}px`);
+    setHeight(active ? '0px' : `${contentSpace.current.scrollHeight * 2}px`);
     setRotate(
       active
         ? 'transform duration-700 ease'
@@ -30,7 +32,7 @@ export const Accordion: React.FC<AccordionProps> = ({
   }
 
   return (
-    <div className={`text-center text-white	${color}`}>
+    <div className={`text-center inline-block text-white	w-1/3 ${color}`}>
       <button
         className="content-center inline-flex items-center py-6"
         type="submit"
@@ -58,14 +60,12 @@ export const Accordion: React.FC<AccordionProps> = ({
       <div
         ref={contentSpace}
         style={{ maxHeight: `${height}` }}
-        className="overflow-hidden transition-max-height duration-700 ease-in-out"
+        className={`transition-max-height duration-700 ease-in-out overflow-${
+          !overflow ? 'hidden' : 'auto'
+        }`}
       >
         <div className="pb-4 ">{content}</div>
       </div>
     </div>
   );
 };
-
-// <button class="inline-flex items-center px-3 py-2 font-medium rounded px-4 py-2 leading-5 bg-green-500 text-primary-100 text-white hover:text-white hover:bg-green-700">
-//     <svg class="inline-block w-5 h-5 mr-1" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg> Woohoo!
-// </button>
