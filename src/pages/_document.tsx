@@ -1,4 +1,4 @@
-/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable react/no-danger */
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 import Script from 'next/script';
 
@@ -14,8 +14,8 @@ class MyDocument extends Document {
             dangerouslySetInnerHTML={{
               __html: `
               window.dataLayer = window.dataLayer || []; function gtag()
-            {dataLayer.push(arguments)}
-            gtag('js', new Date()); gtag('config', 'G-531B9RH73H');
+              {dataLayer.push(arguments)}
+              gtag('js', new Date()); gtag('config', 'G-531B9RH73H');
               `,
             }}
           />
