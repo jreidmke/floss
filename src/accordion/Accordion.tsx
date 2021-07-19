@@ -31,7 +31,6 @@ export const Accordion: React.FC<AccordionProps> = ({
         : 'transform duration-700 ease rotate-180'
     );
   }
-  console.log(rotate);
 
   return (
     <div className={`text-center inline-block text-white	w-1/3 ${color}`}>

@@ -26,7 +26,7 @@ const Hero = () => (
         </li>
       </NavbarTwoColumns>
     </div>
-    <div className="mt-32">
+    <div className="mt-32 ml-40">
       <HeroOneButton
         title={
           <>
