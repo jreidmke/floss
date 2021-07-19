@@ -16,7 +16,7 @@ const NavbarTwoColumns = (props: INavbarProps) => (
     </div>
 
     <nav>
-      <ul className="navbar flex items-center ml-32">{props.children}</ul>
+      <ul className="navbar flex items-center lg:ml-32">{props.children}</ul>
     </nav>
 
     <style jsx>

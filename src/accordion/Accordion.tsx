@@ -18,7 +18,7 @@ export const Accordion: React.FC<AccordionProps> = ({
   const [active, setActive] = useState(false);
   const [height, setHeight] = useState('0px');
   const [rotate, setRotate] = useState('transform duration-700 ease');
-
+  console.log(rotate);
   const contentSpace = useRef(null);
 
   function toggleAccordion() {
